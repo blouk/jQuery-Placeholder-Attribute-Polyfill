@@ -1,0 +1,17 @@
+Description:
+Provides a polyfill for browsers that do not support the placeholder attribute on input elements.
+
+Usage:
+$( "input[type=text]" ).placeholder();
+
+$( "input[type=text]" ).placeholder({
+	tagName:	"div",
+	polyClass:	"placeholder",
+	wrapClass:	"placeholder-wrap",
+	callback:	function ( e ) {
+		// Do something	
+	}
+});
+
+Note:
+Keep the comment with the code please, thanks!
