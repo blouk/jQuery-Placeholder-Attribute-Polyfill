@@ -14,23 +14,11 @@
  */
 (function ( $ ) {
 
-var methods = {
-	attrIn: function ( attr, element ) {
-		var ret;
-		
-		if ( typeof element === "string" ) {
-			element = document.createElement( element );
-		}
-		
-		ret = ( attr in element );
-		
-		element = null;
-		
-		return ret;
-	}
-};
+var inp = doc.createElement( "input" );
 
-$.support.placeholder = methods.attrIn( "placeholder", "input" );
+$.support.placeholder = "placeholder" in inp;
+
+inp = null;
 
 $.fn.extend({
 	placeholder: function () {
