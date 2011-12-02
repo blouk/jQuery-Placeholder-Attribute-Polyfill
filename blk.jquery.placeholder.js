@@ -14,7 +14,7 @@
  */
 (function ( $ ) {
 
-var inp = doc.createElement( "input" );
+var inp = document.createElement( "input" );
 
 $.support.placeholder = "placeholder" in inp;
 
